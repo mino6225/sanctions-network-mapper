@@ -1,3 +1,4 @@
+
 # Sanctions Network Mapper
 
 A Python tool that maps hidden connections between OFAC-sanctioned entities by 
@@ -5,10 +6,8 @@ analyzing shared physical addresses across the U.S. Treasury SDN list. Builds
 an interactive network graph to identify sanctions evasion clusters, shell company 
 networks, and high-connectivity hub entities.
 
-Written entirely from scratch in Python — no tutorials followed, no templates used. 
-Conceived, architected, and built independently by an international affairs analyst 
-on day 4 of learning Python, applying domain expertise in Eurasian sanctions and 
-cross-border risk intelligence to drive every analytical decision.
+Built from scratch as part of an independent technical development program in 
+cross-border risk intelligence and Eurasian political economy.
 
 ## What It Does
 - Loads and processes three OFAC SDN datasets: primary entities, alternate names, 
@@ -38,21 +37,13 @@ evasion infrastructure.
 | China/Offshore Shipping | 18 entities | North Korea-linked sanctions evasion via Pacific maritime network |
 | Iranian Shipping Network | 17 entities | IRISL subsidiary structure — Persian-named entities with sequential IDs |
 
-These findings were not pre-defined or tutorial-driven. The cluster identifications 
-and analytical interpretations were made independently based on domain knowledge of 
-Eurasian sanctions evasion typologies, shell company registration patterns, and 
-Iranian maritime sanctions infrastructure.
-
 ## Tech Stack
 Python 3.14 · NetworkX · PyVis · pandas · os
 
 ## Data Sources
 - OFAC Specially Designated Nationals (SDN) List — U.S. Treasury (public)
-- OFAC Alternate Names (ALT) List — U.S. Treasury (public)  
+- OFAC Alternate Names (ALT) List — U.S. Treasury (public)
 - OFAC Addresses (ADD) List — U.S. Treasury (public)
-
-Download all three directly from ofac.treas.gov — raw data files not included 
-in this repo.
 
 ## Output Files
 - `sanctions_subgraph.html` — interactive network visualization (open in browser)

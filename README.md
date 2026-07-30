@@ -6,8 +6,7 @@ analyzing shared physical addresses across the U.S. Treasury SDN list. Builds
 an interactive network graph to identify sanctions evasion clusters, shell company 
 networks, and high-connectivity hub entities.
 
-Built from scratch as part of an independent technical development program in 
-cross-border risk intelligence and Eurasian political economy.
+Built using an AI-directed development workflow directing the build and prompting through architecture and graph-analysis logic decisions, then independently implementing, testing, and debugging the code (data cleaning, edge construction, PyVis export). Cluster patterns characterized through manual analytical review, as part of a continuing focus on cross-border risk intelligence and Eurasian political economy.
 
 ## What It Does
 - Loads and processes three OFAC SDN datasets: primary entities, alternate names, 
@@ -23,10 +22,11 @@ cross-border risk intelligence and Eurasian political economy.
 
 ## Key Findings
 
-**Most connected entity:** MONSOON SHIPPING LTD — 113 connections to other 
-sanctioned entities via shared addresses, consistent with Iranian oil sanctions 
-evasion infrastructure.
+**Most connected entity:** MONSOON SHIPPING LTD — 113 connections to other sanctioned entities via shared addresses. Based on the entity name and shared-address pattern, this is consistent with the kind of shell-shipping structure often used in Iranian oil sanctions evasion, though this is my interpretation rather than something confirmed by the OFAC program field.
 
+Five clusters identified by the tool via shared-address connected-components analysis; patterns characterized through manual review of entity names within each cluster:
+
+After the tool grouped entities into clusters, I reviewed the entity names in each to characterize the likely pattern:
 **Five distinct sanctions evasion networks identified:**
 
 | Cluster | Size | Description |
